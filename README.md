@@ -1,2 +1,2 @@
-# apps
-Fast API, Flask
+# APPS
+Fast API, Flask, Streamlit apps
