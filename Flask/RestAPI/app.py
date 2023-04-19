@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 import os
 
 # Init app
-app = Flask('__name__')
+app = Flask(__name__)
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 # Database
@@ -112,4 +112,4 @@ def delete_product(id):
 
 # Run server
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=8080)
