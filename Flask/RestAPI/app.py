@@ -48,6 +48,12 @@ with app.app_context():
     db.create_all()
 
 
+# Home page
+@app.route("/", methods=["GET", "POST"])
+def say_hello():
+    return 'Hello welcome to products page!'
+
+
 # Create a Product
 @app.route('/product', methods=['POST'])
 def add_product():
